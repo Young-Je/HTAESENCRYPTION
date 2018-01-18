@@ -8,7 +8,7 @@
 //#import "AESCrypt.h"
 #import "AESCrypt.h"
 #import <Foundation/Foundation.h>
-#define ASEENCRYPTIONKEY @"HuTongJinMaiKeJij67HKJnu8737<>&#"
+#define ASEENCRYPTIONKEY @"1111222"
 @interface HTAESENCRYPTION : AESCrypt
 
 + (NSString *)encrypt:(NSString *)message;
