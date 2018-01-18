@@ -6,9 +6,29 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		127386E2200EE6E800B31049 /* UniveralHTENCRYPT */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 127386E3200EE6E800B31049 /* Build configuration list for PBXAggregateTarget "UniveralHTENCRYPT" */;
+			buildPhases = (
+				127386E6200EE78100B31049 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniveralHTENCRYPT;
+			productName = UniveralHTENCRYPT;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		127386DB200EE25700B31049 /* HTAESENCRYPTION.m in Sources */ = {isa = PBXBuildFile; fileRef = 127386DA200EE25700B31049 /* HTAESENCRYPTION.m */; };
 		127386DC200EE25700B31049 /* HTAESENCRYPTION.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127386D9200EE25700B31049 /* HTAESENCRYPTION.h */; };
+		12989CE02010562700FA50CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12989CDF2010562700FA50CE /* Foundation.framework */; };
+		12989D112010715500FA50CE /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 12989D082010715500FA50CE /* AESCrypt.m */; };
+		12989D122010715500FA50CE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 12989D0B2010715500FA50CE /* NSData+Base64.m */; };
+		12989D132010715500FA50CE /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 12989D0D2010715500FA50CE /* NSData+CommonCrypto.m */; };
+		12989D142010715500FA50CE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 12989D0F2010715500FA50CE /* NSString+Base64.m */; };
+		12989D152010716300FA50CE /* AESCrypt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12989D072010715500FA50CE /* AESCrypt.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +38,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				12989D152010716300FA50CE /* AESCrypt.h in CopyFiles */,
 				127386DC200EE25700B31049 /* HTAESENCRYPTION.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +49,18 @@
 		127386D6200EE25700B31049 /* libHTAESENCRYPTION.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHTAESENCRYPTION.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		127386D9200EE25700B31049 /* HTAESENCRYPTION.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTAESENCRYPTION.h; sourceTree = "<group>"; };
 		127386DA200EE25700B31049 /* HTAESENCRYPTION.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTAESENCRYPTION.m; sourceTree = "<group>"; };
+		12989CDF2010562700FA50CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12989D062010715500FA50CE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		12989D072010715500FA50CE /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		12989D082010715500FA50CE /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		12989D092010715500FA50CE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		12989D0A2010715500FA50CE /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		12989D0B2010715500FA50CE /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		12989D0C2010715500FA50CE /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		12989D0D2010715500FA50CE /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		12989D0E2010715500FA50CE /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		12989D0F2010715500FA50CE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		12989D102010715500FA50CE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12989CE02010562700FA50CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +80,7 @@
 			children = (
 				127386D8200EE25700B31049 /* HTAESENCRYPTION */,
 				127386D7200EE25700B31049 /* Products */,
+				12989CDE2010562600FA50CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +95,37 @@
 		127386D8200EE25700B31049 /* HTAESENCRYPTION */ = {
 			isa = PBXGroup;
 			children = (
+				12989D052010715500FA50CE /* AESCrypt */,
 				127386D9200EE25700B31049 /* HTAESENCRYPTION.h */,
 				127386DA200EE25700B31049 /* HTAESENCRYPTION.m */,
 			);
 			path = HTAESENCRYPTION;
+			sourceTree = "<group>";
+		};
+		12989CDE2010562600FA50CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12989CDF2010562700FA50CE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12989D052010715500FA50CE /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				12989D062010715500FA50CE /* .gitignore */,
+				12989D072010715500FA50CE /* AESCrypt.h */,
+				12989D082010715500FA50CE /* AESCrypt.m */,
+				12989D092010715500FA50CE /* LICENSE */,
+				12989D0A2010715500FA50CE /* NSData+Base64.h */,
+				12989D0B2010715500FA50CE /* NSData+Base64.m */,
+				12989D0C2010715500FA50CE /* NSData+CommonCrypto.h */,
+				12989D0D2010715500FA50CE /* NSData+CommonCrypto.m */,
+				12989D0E2010715500FA50CE /* NSString+Base64.h */,
+				12989D0F2010715500FA50CE /* NSString+Base64.m */,
+				12989D102010715500FA50CE /* README.md */,
+			);
+			path = AESCrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +161,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					127386E2200EE6E800B31049 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 127386D1200EE25700B31049 /* Build configuration list for PBXProject "HTAESENCRYPTION" */;
@@ -114,15 +180,36 @@
 			projectRoot = "";
 			targets = (
 				127386D5200EE25700B31049 /* HTAESENCRYPTION */,
+				127386E2200EE6E800B31049 /* UniveralHTENCRYPT */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		127386E6200EE78100B31049 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ${PROJECT_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 -arch i386 -arch armv7 -arch armv7s -arch arm64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\necho \"Universal library can be found here:\"\necho ${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		127386D2200EE25700B31049 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12989D142010715500FA50CE /* NSString+Base64.m in Sources */,
+				12989D122010715500FA50CE /* NSData+Base64.m in Sources */,
+				12989D132010715500FA50CE /* NSData+CommonCrypto.m in Sources */,
+				12989D112010715500FA50CE /* AESCrypt.m in Sources */,
 				127386DB200EE25700B31049 /* HTAESENCRYPTION.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,10 +265,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/$(PROJECT_NAME)/AESCrypt/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_DIR)/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
+				SYMROOT = build;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/$(PROJECT_NAME)/**";
 			};
 			name = Debug;
 		};
@@ -227,9 +319,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/$(PROJECT_NAME)/AESCrypt/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_DIR)/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
+				SYMROOT = build;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/$(PROJECT_NAME)/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -241,6 +339,7 @@
 				DEVELOPMENT_TEAM = 339UKLN78L;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -253,8 +352,29 @@
 				DEVELOPMENT_TEAM = 339UKLN78L;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		127386E4200EE6E800B31049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 339UKLN78L;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = HTAESENCRYPTION;
+			};
+			name = Debug;
+		};
+		127386E5200EE6E800B31049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 339UKLN78L;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = HTAESENCRYPTION;
 			};
 			name = Release;
 		};
@@ -275,6 +395,15 @@
 			buildConfigurations = (
 				127386E0200EE25700B31049 /* Debug */,
 				127386E1200EE25700B31049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		127386E3200EE6E800B31049 /* Build configuration list for PBXAggregateTarget "UniveralHTENCRYPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				127386E4200EE6E800B31049 /* Debug */,
+				127386E5200EE6E800B31049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

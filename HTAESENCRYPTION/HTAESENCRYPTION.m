@@ -9,5 +9,15 @@
 #import "HTAESENCRYPTION.h"
 
 @implementation HTAESENCRYPTION
+-(void)libPrintf{
+    printf("lib printf called...");
+}
 
++ (NSString *)encrypt:(NSString *)message{
+    return [self encrypt:message password:ASEENCRYPTIONKEY];
+}
+
++ (NSString *)decrypt:(NSString *)base64EncodedString{
+    return [self decrypt:base64EncodedString password:ASEENCRYPTIONKEY];
+}
 @end
